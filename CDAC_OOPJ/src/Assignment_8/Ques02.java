@@ -9,7 +9,7 @@ class RestaurantMenu{
 	private double[] prices = new double[MAX_MENU_SIZE];
 	private int menusize =0;
 	
-	Scanner sc = new Scanner(System.in);
+	private static Scanner sc = new Scanner(System.in);
 	public void menuList() {
 		System.out.println(" आपका मेनू ");
 		for(int i=0;i<menusize;i++) {
@@ -18,8 +18,8 @@ class RestaurantMenu{
 	}
 	public void addDish() {
 		System.out.println("Enter the name of dish: ");
-		String dish = sc.nextLine();
-		System.out.println("You've selected "+ dish);
+		String dish = sc.next();
+		
 		System.out.println("Enter the price of dish : ₹");
 		double price = sc.nextDouble();
 		menu[menusize] = dish;
