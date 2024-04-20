@@ -15,7 +15,7 @@ public class Ques11 {
 		}
 		
 		for(int i=rows; i>=1; i--) {
-			for(char j = 'A'; j<= 'A' +(rows -i); j++) {
+			for(char j = 'A'; j<= 'A' +(rows -i ); j++) {
 				System.out.print(j + " ");
 			}
 			System.out.println();
